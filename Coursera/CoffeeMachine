@@ -25,7 +25,6 @@ public void selectA() {
     }
 
 
-
 }
 
 
@@ -34,7 +33,7 @@ public void selectA() {
 
 CoffeeTouchscreenAdapter.java
 
-public class CoffeeTouchscreenAdapter {
+public class CoffeeTouchscreenAdapter extends CoffeeMachineInterface {
 
 private OldCoffeeMachine OldVendingMachine;
 
