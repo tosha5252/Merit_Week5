@@ -1,0 +1,58 @@
+CoffeeMachineInterface.java
+
+public interface CoffeeMachineInterface {
+
+
+    public void chooseFirstSelection();
+
+    public void chooseSecondSelection();
+
+
+
+}
+
+
+OldCoffeeMachine.java
+
+public class OldCoffeeMachine {
+
+public void selectA() {
+        System.out.println("A");
+    }
+
+    public void selectB() {
+        System.out.println("B");
+    }
+
+
+
+}
+
+
+
+
+
+CoffeeTouchscreenAdapter.java
+
+public class CoffeeTouchscreenAdapter {
+
+private OldCoffeeMachine OldVendingMachine;
+
+    public CoffeeTouchscreenAdapter(OldCoffeeMachine oldVendingMachine) {
+        OldVendingMachine = oldVendingMachine;
+    }
+
+ 
+    public void chooseFirstSelection() {
+        OldVendingMachine.selectA();
+    }
+
+  
+    public void chooseSecondSelection() {
+        OldVendingMachine.selectB();
+    }
+
+
+
+
+}
